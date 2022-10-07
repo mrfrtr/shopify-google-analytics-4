@@ -1,12 +1,12 @@
 const script = document.createElement('script');
-script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=G-4SQLP1WBJJ');
+script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=YOUR_ID');
 script.setAttribute('async', '');
 document.head.appendChild(script);
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-4SQLP1WBJJ');
+gtag('config', 'YOUR_ID');
 
 analytics.subscribe("page_viewed", async (event) => {
   gtag('event', 'page_view',{page_location:event.context.document.location.href,
